@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="date_btn">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -33,7 +33,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="book_btn">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -52,7 +52,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="user_btn">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -71,7 +71,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="setting_btn">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -109,7 +109,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QTabWidget" name="tabWidget">
+   <widget class="QTabWidget" name="day_tab">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -125,11 +125,11 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>Date</string>
      </attribute>
      <widget class="QTableWidget" name="tableWidget">
       <property name="geometry">
@@ -299,7 +299,7 @@
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>Books</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget_2">
       <property name="geometry">
@@ -814,7 +814,7 @@
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
-      <string>Page</string>
+      <string>Users</string>
      </attribute>
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
@@ -1129,7 +1129,7 @@
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
-      <string>Page</string>
+      <string>Settings</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget_3">
       <property name="geometry">
