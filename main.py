@@ -94,11 +94,11 @@ class MainApp(QMainWindow):
 
         category_name = self.new_category_line.text()
         self.cur.execute(
-            """INSERT INTO category (category_name) VALUES (%s) """, (category_name)
+            """INSERT INTO category (category_name) VALUES (%s) """, (category_name,)
         )
 
         self.db.commit()
-        print("done adding")
+        self.statusBar().showMessage('New category Added!')
 
     def add_author(self):
         pass
