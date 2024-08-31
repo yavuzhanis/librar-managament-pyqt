@@ -61,6 +61,18 @@ class MainApp(QMainWindow):
     def delete_books(self):
         pass
 
+    ################################################################TODO USERS SET #################################################################
+
+    def add_new_user(self):
+        pass
+
+    def Login(self):
+        pass
+
+    def edit_user(self):
+        pass
+    
+
 
 def main():
     app = QApplication(sys.argv)
