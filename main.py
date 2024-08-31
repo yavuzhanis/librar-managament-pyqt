@@ -101,10 +101,32 @@ class MainApp(QMainWindow):
         self.statusBar().showMessage('New category Added!')
 
     def add_author(self):
-        pass
+        self.db = MySQLdb.connect(
+            host="localhost", user="root", password="ASDfgh2580.", database="library"
+        )
+        self.cur = self.db.cursor()
+
+        author_name = self.new_author_line.text()
+        self.cur.execute(
+            """INSERT INTO authors (author_name) VALUES (%s) """, (author_name,)
+        )
+
+        self.db.commit()
+        self.statusBar().showMessage('New Author Added!')
 
     def app_publisher(self):
-        pass
+        self.db = MySQLdb.connect(
+            host="localhost", user="root", password="ASDfgh2580.", database="library"
+        )
+        self.cur = self.db.cursor()
+
+        publisher_name = self.new_publisher_line.text()
+        self.cur.execute(
+            """INSERT INTO publisher (publisher_name) VALUES (%s) """, (publisher_name,)
+        )
+
+        self.db.commit()
+        self.statusBar().showMessage('New Publisher Added!')
 
 
 def main():

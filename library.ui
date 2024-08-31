@@ -1141,7 +1141,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -1288,7 +1288,7 @@
          <string>New Author : </string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_26">
+       <widget class="QLineEdit" name="new_author_line">
         <property name="geometry">
          <rect>
           <x>270</x>
@@ -1366,7 +1366,7 @@
          <string>Add New Publisher</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_27">
+       <widget class="QLineEdit" name="new_publisher_line">
         <property name="geometry">
          <rect>
           <x>220</x>
