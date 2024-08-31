@@ -26,6 +26,8 @@ class MainApp(QMainWindow):
         self.book_btn.clicked.connect(self.open_books_tab)
         self.user_btn.clicked.connect(self.open_users_tab)
         self.setting_btn.clicked.connect(self.open_settings_tab)
+        self.add_new_book_btn.clicked.connect(self.add_new_books)
+        self.add_new_cat_btn.clicked.connect(self.add_category)
 
     def show_themes(self):
         self.themes_box.show()
@@ -50,7 +52,17 @@ class MainApp(QMainWindow):
 
     ################################################################TODO BOOKS SET #################################################################
     def add_new_books(self):
-        pass
+        self.db = MySQLdb.connect(
+            host="localhost", user="root", password="ASDfgh2580.", database="library"
+        )
+        self.cur = self.db.cursor()
+
+        book_title = self.add_book_line.text()
+        book_code = self.book_code_line.text()
+        book_category = self.book_category_box.CurrentText()
+        book_author = self.add_author_box.CurrentText()
+        book_publisher = self.add_publisher_box.CurrentText()
+        book_price = self.add_book_price.text()
 
     def search_books(self):
         pass
@@ -71,7 +83,28 @@ class MainApp(QMainWindow):
 
     def edit_user(self):
         pass
-    
+
+    ################################################################TODO SETTİNGS SET #################################################################
+
+    def add_category(self):
+        self.db = MySQLdb.connect(
+            host="localhost", user="root", password="ASDfgh2580.", database="library"
+        )
+        self.cur = self.db.cursor()
+
+        category_name = self.new_category_line.text()
+        self.cur.execute(
+            """INSERT INTO category (category_name) VALUES (%s) """, (category_name)
+        )
+
+        self.db.commit()
+        print("done adding")
+
+    def add_author(self):
+        pass
+
+    def app_publisher(self):
+        pass
 
 
 def main():

@@ -125,7 +125,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -311,13 +311,13 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
         <string>Add New Book</string>
        </attribute>
-       <widget class="QLineEdit" name="lineEdit_3">
+       <widget class="QLineEdit" name="add_book_line">
         <property name="geometry">
          <rect>
           <x>130</x>
@@ -337,7 +337,7 @@
          </rect>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_4">
+       <widget class="QLineEdit" name="book_code_line">
         <property name="geometry">
          <rect>
           <x>560</x>
@@ -347,7 +347,7 @@
          </rect>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_5">
+       <widget class="QLineEdit" name="add_book_price">
         <property name="geometry">
          <rect>
           <x>560</x>
@@ -357,7 +357,7 @@
          </rect>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_7">
+       <widget class="QPushButton" name="add_new_book_btn">
         <property name="geometry">
          <rect>
           <x>490</x>
@@ -517,13 +517,13 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
-          <widget class="QComboBox" name="comboBox_3"/>
+          <widget class="QComboBox" name="book_category_box"/>
          </item>
          <item>
-          <widget class="QComboBox" name="comboBox_4"/>
+          <widget class="QComboBox" name="add_author_box"/>
          </item>
          <item>
-          <widget class="QComboBox" name="comboBox_5"/>
+          <widget class="QComboBox" name="add_publisher_box"/>
          </item>
         </layout>
        </widget>
@@ -1141,7 +1141,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -1168,7 +1168,7 @@
          </property>
         </column>
        </widget>
-       <widget class="QPushButton" name="pushButton_15">
+       <widget class="QPushButton" name="add_new_cat_btn">
         <property name="geometry">
          <rect>
           <x>560</x>
@@ -1189,7 +1189,7 @@
          <string>Add New Category</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_25">
+       <widget class="QLineEdit" name="new_category_line">
         <property name="geometry">
          <rect>
           <x>260</x>
